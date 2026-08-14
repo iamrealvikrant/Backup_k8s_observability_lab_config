@@ -1,0 +1,25 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"monitoring.coreos.com/v1","kind":"ServiceMonitor","metadata":{"annotations":{},"labels":{"release":"kube-prometheus-stack"},"name":"nginx-app","namespace":"monitoring"},"spec":{"endpoints":[{"interval":"15s","path":"/metrics","port":"metrics"}],"namespaceSelector":{"matchNames":["default"]},"selector":{"matchLabels":{"app":"nginx-app"}}}}
+  creationTimestamp: "2026-08-14T05:18:13Z"
+  generation: 1
+  labels:
+    release: kube-prometheus-stack
+  name: nginx-app
+  namespace: monitoring
+  resourceVersion: "162018"
+  uid: 4f4ac869-545c-4dfc-bffa-f7691049ee7d
+spec:
+  endpoints:
+  - interval: 15s
+    path: /metrics
+    port: metrics
+  namespaceSelector:
+    matchNames:
+    - default
+  selector:
+    matchLabels:
+      app: nginx-app

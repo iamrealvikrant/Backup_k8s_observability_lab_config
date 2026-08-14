@@ -1,0 +1,109 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.networking.k8s.io/v1","kind":"Gateway","metadata":{"annotations":{},"name":"nginx-gateway","namespace":"default"},"spec":{"gatewayClassName":"eg","infrastructure":{"parametersRef":{"group":"gateway.envoyproxy.io","kind":"EnvoyProxy","name":"nginx-gateway-proxy"}},"listeners":[{"allowedRoutes":{"namespaces":{"from":"Same"}},"name":"http","port":80,"protocol":"HTTP"},{"allowedRoutes":{"namespaces":{"from":"Same"}},"name":"https","port":443,"protocol":"HTTPS","tls":{"certificateRefs":[{"kind":"Secret","name":"vikrantdevops-tls"}],"mode":"Terminate"}}]}}
+    reconcile: "1786650225"
+  creationTimestamp: "2026-08-13T17:01:41Z"
+  generation: 3
+  name: nginx-gateway
+  namespace: default
+  resourceVersion: "170909"
+  uid: e3451a70-c194-451b-b181-26f78d84d7fa
+spec:
+  gatewayClassName: eg
+  infrastructure:
+    parametersRef:
+      group: gateway.envoyproxy.io
+      kind: EnvoyProxy
+      name: nginx-gateway-proxy
+  listeners:
+  - allowedRoutes:
+      namespaces:
+        from: Same
+    name: http
+    port: 80
+    protocol: HTTP
+  - allowedRoutes:
+      namespaces:
+        from: Same
+    name: https
+    port: 443
+    protocol: HTTPS
+    tls:
+      certificateRefs:
+      - group: ""
+        kind: Secret
+        name: vikrantdevops-tls
+      mode: Terminate
+status:
+  addresses:
+  - type: Hostname
+    value: k8s-envoygat-envoydef-cef32c0f55-28ed00690833664b.elb.ap-south-1.amazonaws.com
+  conditions:
+  - lastTransitionTime: "2026-08-14T06:03:39Z"
+    message: The Gateway has been scheduled by Envoy Gateway
+    observedGeneration: 3
+    reason: Accepted
+    status: "True"
+    type: Accepted
+  - lastTransitionTime: "2026-08-14T06:03:39Z"
+    message: Address assigned to the Gateway, 1/1 envoy replicas available
+    observedGeneration: 3
+    reason: Programmed
+    status: "True"
+    type: Programmed
+  listeners:
+  - attachedRoutes: 0
+    conditions:
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Sending translated listener configuration to the data plane
+      observedGeneration: 3
+      reason: Programmed
+      status: "True"
+      type: Programmed
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Listener has been successfully translated
+      observedGeneration: 3
+      reason: Accepted
+      status: "True"
+      type: Accepted
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Listener references have been resolved
+      observedGeneration: 3
+      reason: ResolvedRefs
+      status: "True"
+      type: ResolvedRefs
+    name: http
+    supportedKinds:
+    - group: gateway.networking.k8s.io
+      kind: HTTPRoute
+    - group: gateway.networking.k8s.io
+      kind: GRPCRoute
+  - attachedRoutes: 3
+    conditions:
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Sending translated listener configuration to the data plane
+      observedGeneration: 3
+      reason: Programmed
+      status: "True"
+      type: Programmed
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Listener has been successfully translated
+      observedGeneration: 3
+      reason: Accepted
+      status: "True"
+      type: Accepted
+    - lastTransitionTime: "2026-08-14T06:03:39Z"
+      message: Listener references have been resolved
+      observedGeneration: 3
+      reason: ResolvedRefs
+      status: "True"
+      type: ResolvedRefs
+    name: https
+    supportedKinds:
+    - group: gateway.networking.k8s.io
+      kind: HTTPRoute
+    - group: gateway.networking.k8s.io
+      kind: GRPCRoute

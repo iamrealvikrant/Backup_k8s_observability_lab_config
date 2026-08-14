@@ -1,0 +1,30 @@
+{
+    "LoadBalancers": [
+        {
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:ap-south-1:242201301707:loadbalancer/net/k8s-envoygat-envoydef-cef32c0f55/28ed00690833664b",
+            "DNSName": "k8s-envoygat-envoydef-cef32c0f55-28ed00690833664b.elb.ap-south-1.amazonaws.com",
+            "CanonicalHostedZoneId": "ZVDDRBQ08TROA",
+            "CreatedTime": "2026-08-13T19:41:02.498000+00:00",
+            "LoadBalancerName": "k8s-envoygat-envoydef-cef32c0f55",
+            "Scheme": "internet-facing",
+            "VpcId": "vpc-0e0422e60618b713f",
+            "State": {
+                "Code": "active"
+            },
+            "Type": "network",
+            "AvailabilityZones": [
+                {
+                    "ZoneName": "ap-south-1a",
+                    "SubnetId": "subnet-09eb74027a5e19fee",
+                    "LoadBalancerAddresses": []
+                }
+            ],
+            "SecurityGroups": [
+                "sg-0c4da0d8a445242c4",
+                "sg-0e0e3d43cc39757bd"
+            ],
+            "IpAddressType": "ipv4",
+            "EnablePrefixForIpv6SourceNat": "off"
+        }
+    ]
+}

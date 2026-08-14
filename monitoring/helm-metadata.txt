@@ -1,0 +1,16 @@
+NAME: kube-prometheus-stack
+CHART: kube-prometheus-stack
+VERSION: 88.3.0
+APP_VERSION: v0.93.0
+ANNOTATIONS: artifacthub.io/license=Apache-2.0,artifacthub.io/links=- name: Chart Source
+  url: https://github.com/prometheus-community/helm-charts
+- name: Upstream Project
+  url: https://github.com/prometheus-operator/kube-prometheus
+- name: Upgrade Process
+  url: https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/README.md#upgrading-chart
+,artifacthub.io/operator=true
+DEPENDENCIES: crds,grafana,kube-state-metrics,prometheus-node-exporter
+NAMESPACE: monitoring
+REVISION: 5
+STATUS: deployed
+DEPLOYED_AT: 2026-08-14T06:15:34Z

@@ -1,0 +1,3 @@
+NAMESPACE    NAME                                              READY   AGE
+monitoring   alertmanager-kube-prometheus-stack-alertmanager   1/1     9h
+monitoring   prometheus-kube-prometheus-stack-prometheus       1/1     9h

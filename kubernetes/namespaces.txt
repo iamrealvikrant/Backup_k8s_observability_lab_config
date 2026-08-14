@@ -1,0 +1,10 @@
+NAME                   STATUS   AGE
+calico-system          Active   24h
+cert-manager           Active   17h
+default                Active   24h
+envoy-gateway-system   Active   21h
+kube-node-lease        Active   24h
+kube-public            Active   24h
+kube-system            Active   24h
+monitoring             Active   10h
+tigera-operator        Active   24h

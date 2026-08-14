@@ -1,0 +1,23 @@
+{
+    "Addresses": [
+        {
+            "AllocationId": "eipalloc-0baee84e6664ca7c3",
+            "AssociationId": "eipassoc-05f35180db4ded5e4",
+            "Domain": "vpc",
+            "PrivateIpAddress": "3.6.60.26",
+            "Tags": [
+                {
+                    "Key": "k8s-nat-eip",
+                    "Value": ""
+                },
+                {
+                    "Key": "Name",
+                    "Value": "k8s-nat-eip"
+                }
+            ],
+            "PublicIpv4Pool": "amazon",
+            "NetworkBorderGroup": "ap-south-1",
+            "PublicIp": "3.6.60.26"
+        }
+    ]
+}

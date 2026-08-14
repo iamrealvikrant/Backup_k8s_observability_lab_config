@@ -1,0 +1,29 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.crt
+*.csr
+.env
+.env.*
+secrets.yaml
+*-secret.yaml
+
+# Kubernetes generated files
+kubernetes/secrets/
+
+# SSH
+.ssh/
+
+# Temporary files
+*.tmp
+*.swp

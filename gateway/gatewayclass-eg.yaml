@@ -1,0 +1,23 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"gateway.networking.k8s.io/v1","kind":"GatewayClass","metadata":{"annotations":{},"name":"eg"},"spec":{"controllerName":"gateway.envoyproxy.io/gatewayclass-controller"}}
+  creationTimestamp: "2026-08-13T16:58:36Z"
+  finalizers:
+  - gateway-exists-finalizer.gateway.networking.k8s.io
+  generation: 1
+  name: eg
+  resourceVersion: "26842"
+  uid: 0cb4de35-4b2e-465d-9d33-0c8fe5270bec
+spec:
+  controllerName: gateway.envoyproxy.io/gatewayclass-controller
+status:
+  conditions:
+  - lastTransitionTime: "2026-08-13T16:58:36Z"
+    message: Valid GatewayClass
+    observedGeneration: 1
+    reason: Accepted
+    status: "True"
+    type: Accepted

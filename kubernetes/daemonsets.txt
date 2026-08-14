@@ -1,0 +1,5 @@
+NAMESPACE       NAME                                             DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+calico-system   calico-node                                      2         2         2       2            2           kubernetes.io/os=linux   24h
+calico-system   csi-node-driver                                  2         2         2       2            2           kubernetes.io/os=linux   24h
+kube-system     kube-proxy                                       2         2         2       2            2           kubernetes.io/os=linux   24h
+monitoring      kube-prometheus-stack-prometheus-node-exporter   2         2         2       2            2           kubernetes.io/os=linux   9h
