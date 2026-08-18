@@ -60,6 +60,17 @@ NGINX
 |
 +-- Grafana
 
+* Architecture
+* AWS infrastructure
+* Kubernetes
+* Calico
+* Prometheus
+* Grafana
+* OpenSearch
+* Nginx
+* Deployment steps
+* Monitoring flow
+
 ## Public URLs
 
 https://vikrantdevops.duckdns.org/
